@@ -1,12 +1,46 @@
-import React from 'react';
-import './App.css';
-import '@mantine/core/styles.css';
+import React from "react";
+import "@mantine/core/styles.css";
 
+import {
+  MantineProvider,
+  Text,
+  Stack,
+  Avatar,
+  AppShell,
+  Image,
+  Group,
+  Center,
+  Divider,
+  Card,
+  Anchor,
+} from "@mantine/core";
 
-import { MantineProvider, Text, Stack, Avatar, AppShell, Group, Center, Divider } from '@mantine/core' 
-
-export function PublicationCard() {
+export function PublicationCard({
+  name,
+  picture,
+  link,
+  authors,
+  venue,
+}: {
+  name: string;
+  picture: string;
+  link: string;
+  authors: string;
+  venue: string;
+}) {
   return (
-    <Text>Publication</Text>
+    <Group wrap="nowrap" align="start">
+      <Card shadow="lg" style={{ width: "30%" }}>
+        <Image src={picture} />
+      </Card>
+
+      <Stack gap="xs">
+        <Anchor href={link} fw={700}>
+          {name}
+        </Anchor>
+        <Text size="sm">{authors}</Text>
+        <Text size="sm">{venue}</Text>
+      </Stack>
+    </Group>
   );
 }
