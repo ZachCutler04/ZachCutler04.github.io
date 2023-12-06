@@ -20,7 +20,7 @@ export function App() {
       <AppShell style={{ height: "100%", width: "100%" }}>
         <Center>
           <Stack
-            style={{ height: "100%", width: "900px" }}
+            style={{ height: "100%", width: "1200px" }}
             py="xl"
             mx="xl"
             my="xl"
@@ -29,7 +29,7 @@ export function App() {
               <Stack gap="xs">
                 <Avatar
                   style={{ width: "100px", height: "100px" }}
-                  src="logo.svg"
+                  src="./zcutler.jpg"
                 />
                 <Text fw={700}>Contact</Text>
                 <Text>zach.t.cutler@gmail.com</Text>
