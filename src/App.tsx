@@ -33,13 +33,15 @@ export function App() {
                 />
                 <Text fw={700}>Contact</Text>
                 <Text>zach.t.cutler@gmail.com</Text>
+                <Anchor fw={700} href="./phdAppsResume.pdf">
+                  Curriculum Vitae
+                </Anchor>
                 <Anchor href="https://twitter.com/Cutlerzach">Twitter</Anchor>
               </Stack>
-              <Stack>
+              <Stack gap="xs">
                 <Text size="xl" fw={800}>
                   Zach Cutler
                 </Text>
-
                 <Text>
                   I’m a first year PhD student at the School of Computing
                   working with{" "}
@@ -53,11 +55,11 @@ export function App() {
                   at the University of Utah. My current research is focused on
                   making user studies easier to design, run, and analyze. I’ve
                   previously worked mostly on provenance in visualization
-                  systems, and helped and helped develop both{" "}
+                  systems, and helped develop both{" "}
                   <Anchor href="https://vdl.sci.utah.edu/blog/2020/10/28/trrack/">
                     Trrack
                   </Anchor>{" "}
-                  and
+                  and{" "}
                   <Anchor href="https://www.chromatic.com/library?appId=63ee57592a53ae7413d27e43">
                     Trrack-Vis
                   </Anchor>
