@@ -36,7 +36,6 @@ export function App() {
                 <Anchor fw={700} href="./phdAppsResume.pdf">
                   Curriculum Vitae
                 </Anchor>
-                <Anchor href="https://twitter.com/Cutlerzach">Twitter</Anchor>
               </Stack>
               <Stack gap="xs">
                 <Text size="xl" fw={800}>
@@ -47,14 +46,25 @@ export function App() {
                   <Anchor href="https://vdl.sci.utah.edu/team/lex/">
                     Alexander Lex
                   </Anchor>{" "}
+                  and{" "}
+                  <Anchor href="https://www.mcnutt.in/">Andrew McNutt</Anchor>{" "}
                   as part of the{" "}
                   <Anchor href="https://vdl.sci.utah.edu/">
                     Visualization Design Lab
                   </Anchor>{" "}
                   at the University of Utah. My current research is focused on
-                  making user studies easier to design, run, and analyze. I’ve
-                  previously worked mostly on provenance in visualization
-                  systems, and helped develop both{" "}
+                  making user studies easier to design, run, and analyze for the
+                  visualization community. I am part of a larger team which
+                  develops and maintains{" "}
+                  <Anchor href="https://revisit.dev">reVISit</Anchor>, our
+                  framework for creating user studies. I am also interested in
+                  empirical research focusing on visualization literacy, trust
+                  in visualization, belief and belief elicitation, and
+                  misinformation.
+                </Text>
+                <Text>
+                  I have previously worked on provenance in visualization
+                  systems, and helped develop and currently maintain both{" "}
                   <Anchor href="https://vdl.sci.utah.edu/blog/2020/10/28/trrack/">
                     Trrack
                   </Anchor>{" "}
@@ -78,25 +88,25 @@ export function App() {
                 venue="Computer Graphics Forum (EuroVis), 2022"
               />
               <PublicationCard
-                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
-                name="Reusing Interactive Analysis Workflows"
-                picture="./2022_eurovis_reusing_intent.png"
-                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
-                venue="Computer Graphics Forum (EuroVis), 2022"
+                link="https://vdl.sci.utah.edu/publications/2025_chi_crowdaloud/"
+                name="Crowdsourced Think-Aloud Studies"
+                picture="./2025_chi_crowdaloud_teaser.png"
+                authors="Zach Cutler, Lane Harrison, Carolina Nobre, Alexander Lex"
+                venue="SIGCHI Conference on Human Factors in Computing Systems (CHI), 2025"
               />
               <PublicationCard
-                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
-                name="Reusing Interactive Analysis Workflows"
-                picture="./2022_eurovis_reusing_intent.png"
-                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
-                venue="Computer Graphics Forum (EuroVis), 2022"
+                link="https://vdl.sci.utah.edu/publications/2025_chi_guardrails/"
+                name="Visualization Guardrails: Designing Interventions Against Cherry-Picking in Interactive Data Explorers"
+                picture="./2025_chi_guardrails_teaser.png"
+                authors="Maxim Lisnic, Zach Cutler, Marina Kogan, Alexander Lex"
+                venue="SIGCHI Conference on Human Factors in Computing Systems (CHI), 2025"
               />
               <PublicationCard
-                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
-                name="Reusing Interactive Analysis Workflows"
-                picture="./2022_eurovis_reusing_intent.png"
+                link="https://vdl.sci.utah.edu/publications/2024_eurovis_persist/"
+                name="Persist: Persistent and Reusable Interactions in Computational Notebooks"
+                picture="./2024_preprint_persist_teaser.png"
                 authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
-                venue="Computer Graphics Forum (EuroVis), 2022"
+                venue="Computer Graphics Forum (EuroVis), 2024"
               />
               <PublicationCard
                 link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
