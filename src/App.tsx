@@ -43,8 +43,7 @@ export function App() {
                   Zach Cutler
                 </Text>
                 <Text>
-                  I’m a first year PhD student at the School of Computing
-                  working with{" "}
+                  I’m a third year PhD student working with{" "}
                   <Anchor href="https://vdl.sci.utah.edu/team/lex/">
                     Alexander Lex
                   </Anchor>{" "}
@@ -71,6 +70,34 @@ export function App() {
               <Text size="xl" fw={800}>
                 Publications
               </Text>
+              <PublicationCard
+                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
+                name="Reusing Interactive Analysis Workflows"
+                picture="./2022_eurovis_reusing_intent.png"
+                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
+                venue="Computer Graphics Forum (EuroVis), 2022"
+              />
+              <PublicationCard
+                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
+                name="Reusing Interactive Analysis Workflows"
+                picture="./2022_eurovis_reusing_intent.png"
+                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
+                venue="Computer Graphics Forum (EuroVis), 2022"
+              />
+              <PublicationCard
+                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
+                name="Reusing Interactive Analysis Workflows"
+                picture="./2022_eurovis_reusing_intent.png"
+                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
+                venue="Computer Graphics Forum (EuroVis), 2022"
+              />
+              <PublicationCard
+                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
+                name="Reusing Interactive Analysis Workflows"
+                picture="./2022_eurovis_reusing_intent.png"
+                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
+                venue="Computer Graphics Forum (EuroVis), 2022"
+              />
               <PublicationCard
                 link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
                 name="Reusing Interactive Analysis Workflows"
