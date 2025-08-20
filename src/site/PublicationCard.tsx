@@ -1,5 +1,6 @@
 import React from "react";
 import "@mantine/core/styles.css";
+import { IconStarFilled } from "@tabler/icons-react";
 
 import {
   MantineProvider,
@@ -22,12 +23,14 @@ export function PublicationCard({
   link,
   authors,
   venue,
+  award,
 }: {
   name: string;
   picture: string;
   link: string;
   authors: string;
   venue: string;
+  award?: string;
 }) {
   return (
     <Group wrap="nowrap" align="start">
@@ -35,7 +38,7 @@ export function PublicationCard({
         <Image src={picture} />
       </Card>
 
-      <Stack gap="xs">
+      <Stack gap="5">
         <Anchor href={link} fw={700}>
           {name}
         </Anchor>
@@ -52,6 +55,11 @@ export function PublicationCard({
           {authors}
         </Highlight>
         <Text size="sm">{venue}</Text>
+        {award && (
+          <Text size="sm" c="orange">
+            <IconStarFilled size={12} /> {award}
+          </Text>
+        )}
       </Stack>
     </Group>
   );

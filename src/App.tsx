@@ -86,6 +86,7 @@ export function App() {
                 picture="./2025_vis_revisit.png"
                 authors="Zach Cutler, Jack Wilburn, Hilson Shrestha, Yiren Ding, Brian Bollen, Khandaker Abrar Nadib, Tingying He, Andrew McNutt, Lane Harrison, Alexander Lex"
                 venue="IEEE Transactions on Visualization and Computer Graphics (VIS), 2025"
+                award="IEEE VIS 2025 Best Paper Award"
               />
               <PublicationCard
                 link="https://vdl.sci.utah.edu/publications/2025_chi_crowdaloud/"
