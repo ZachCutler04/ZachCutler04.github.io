@@ -81,11 +81,11 @@ export function App() {
                 Publications
               </Text>
               <PublicationCard
-                link="https://vdl.sci.utah.edu/publications/2022_eurovis_reusing_workflows/"
-                name="Reusing Interactive Analysis Workflows"
-                picture="./2022_eurovis_reusing_intent.png"
-                authors="Kiran Gadhave, Zach Cutler, Alexander Lex"
-                venue="Computer Graphics Forum (EuroVis), 2022"
+                link="https://www.visdesignlab.net/publications/2025_vis_revisit/"
+                name="ReVISit 2: A Full Experiment Life Cycle User Study Framework"
+                picture="./2025_vis_revisit.png"
+                authors="Zach Cutler, Jack Wilburn, Hilson Shrestha, Yiren Ding, Brian Bollen, Khandaker Abrar Nadib, Tingying He, Andrew McNutt, Lane Harrison, Alexander Lex"
+                venue="IEEE Transactions on Visualization and Computer Graphics (VIS), 2025"
               />
               <PublicationCard
                 link="https://vdl.sci.utah.edu/publications/2025_chi_crowdaloud/"
