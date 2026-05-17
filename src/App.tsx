@@ -25,11 +25,12 @@ export function App() {
             mx="xl"
             my="xl"
           >
-            <Group wrap="nowrap">
+            <Group wrap="nowrap" align="stretch">
               <Stack gap="xs">
                 <Avatar
-                  style={{ width: "100px", height: "100px" }}
-                  src="./zcutler.jpg"
+                  style={{ width: "200px", height: "200px" }}
+                  src="./zach-cutler.jpg"
+                  alt="Zach Cutler headshot"
                 />
                 <Text fw={700}>Contact</Text>
                 <Text>zach.t.cutler@gmail.com</Text>
@@ -37,8 +38,8 @@ export function App() {
                   Curriculum Vitae
                 </Anchor>
               </Stack>
-              <Stack gap="xs">
-                <Text size="xl" fw={800}>
+              <Stack gap="xs" justify="start" align="start">
+                <Text component="h1" size="xl" fw={800} style={{ margin: 0 }}>
                   Zach Cutler
                 </Text>
                 <Text>
@@ -77,7 +78,7 @@ export function App() {
             </Group>
             <Divider />
             <Stack>
-              <Text size="xl" fw={800}>
+              <Text component="h2" size="xl" fw={800} style={{ margin: 0 }}>
                 Publications
               </Text>
               <PublicationCard

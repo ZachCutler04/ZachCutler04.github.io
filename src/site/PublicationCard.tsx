@@ -3,15 +3,10 @@ import "@mantine/core/styles.css";
 import { IconStarFilled } from "@tabler/icons-react";
 
 import {
-  MantineProvider,
   Text,
   Stack,
-  Avatar,
-  AppShell,
   Image,
   Group,
-  Center,
-  Divider,
   Card,
   Anchor,
   Highlight,
@@ -35,7 +30,11 @@ export function PublicationCard({
   return (
     <Group wrap="nowrap" align="start">
       <Card shadow="lg" style={{ width: "20%" }}>
-        <Image src={picture} />
+        <Image
+          src={picture}
+          alt={`${name} publication teaser`}
+          loading="lazy"
+        />
       </Card>
 
       <Stack gap="5">
