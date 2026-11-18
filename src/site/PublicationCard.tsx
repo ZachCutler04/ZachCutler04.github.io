@@ -38,9 +38,11 @@ export function PublicationCard({
       </Card>
 
       <Stack gap="5">
-        <Anchor href={link} fw={700}>
-          {name}
-        </Anchor>
+        <Text component="h3" fw={700} style={{ margin: 0 }}>
+          <Anchor href={link} fw={700} inherit>
+            {name}
+          </Anchor>
+        </Text>
         <Highlight
           size="sm"
           highlight={["Zach Cutler"]}
