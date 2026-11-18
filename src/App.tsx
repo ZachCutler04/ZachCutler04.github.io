@@ -26,26 +26,12 @@ export function App() {
             mx="xl"
             my="xl"
           >
-            <Group wrap="nowrap" align="stretch">
-              <Stack gap="xs">
-                <Avatar
-                  style={{ width: "200px", height: "200px" }}
-                  src="./zach-cutler.jpg"
-                  alt="Zach Cutler headshot"
-                />
-                <Text fw={700}>Contact</Text>
-                <Text>zach.t.cutler@gmail.com</Text>
-                <Anchor fw={700} href="./zach-cutler-cv.pdf">
-                  Curriculum Vitae
-                </Anchor>
-                <Anchor
-                  fw={700}
-                  href="https://scholar.google.com/citations?user=1EmG6PMAAAAJ"
-                  rel="me"
-                >
-                  Google Scholar
-                </Anchor>
-              </Stack>
+            <Group wrap="nowrap" align="start">
+              <Avatar
+                style={{ width: "200px", height: "200px", flexShrink: 0 }}
+                src="./zach-cutler.jpg"
+                alt="Zach Cutler headshot"
+              />
               <Stack gap="xs" justify="start" align="start">
                 <Text component="h1" size="xl" fw={800} style={{ margin: 0 }}>
                   Zach Cutler
@@ -82,6 +68,21 @@ export function App() {
                     Trrack-Vis
                   </Anchor>
                 </Text>
+                <Group gap="lg" mt="xs">
+                  <Anchor fw={700} href="mailto:zach.t.cutler@gmail.com">
+                    zach.t.cutler@gmail.com
+                  </Anchor>
+                  <Anchor fw={700} href="./zach-cutler-cv.pdf">
+                    Curriculum Vitae
+                  </Anchor>
+                  <Anchor
+                    fw={700}
+                    href="https://scholar.google.com/citations?user=1EmG6PMAAAAJ"
+                    rel="me"
+                  >
+                    Google Scholar
+                  </Anchor>
+                </Group>
               </Stack>
             </Group>
             <Divider />
