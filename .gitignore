@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# LaTeX build files (cv/)
+/cv/*.aux
+/cv/*.log
+/cv/*.out
+/cv/*.fls
+/cv/*.fdb_latexmk
+/cv/*.synctex.gz
+/cv/main.pdf
+/cv/build.log

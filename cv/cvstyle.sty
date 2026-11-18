@@ -1,0 +1,43 @@
+% \usepackage{xcolor}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: \textbf{#1}]}\PackageWarning{TODO:}{#1!}}
+% save in cvstyle.sty
+% \usepackage{cvstyle}
+
+\definecolor{awardhighlight}{RGB}{230,126,34}
+\definecolor{linkblue}{RGB}{33,173,231}
+\definecolor{faded}{RGB}{180,183,186}
+\definecolor{darkgrey}{RGB}{80,83,86}
+\definecolor{italicgrey}{RGB}{30,32,35}
+
+\newcommand{\textsb}[1]{{\fontseries{sb}\selectfont #1}}
+\newcommand{\award}[1]{{\color{awardhighlight}\textsb{#1}}}
+
+% \let\oldtextit\textit
+% \renewcommand{\textit}[1]{\textcolor{italicgrey} {\oldtextit{#1}}}
+
+% \let\oldtextit\textit
+% \renewcommand{\textit}[1]{%
+%   {\fontseries{l}\selectfont\textcolor{italicgrey}{\oldtextit{#1}}}%
+% }
+
+\let\oldtextit\textit
+\renewcommand{\textit}[1]{%
+  {\fontseries{l}\selectfont\textcolor{italicgrey}{#1}}%
+}
+
+
+\newcommand{\blueurl}[2]{%
+  \begingroup
+  \hypersetup{urlcolor=linkblue}% color for clickable link
+  \href{#1}{\textcolor{linkblue}{#2}}%
+  \endgroup
+}
+
+
+
+% fix big whitepsace
+
+% \usepackage{etoolbox}
+% \makeatletter
+% \patchcmd{\@afterheading}{\@nobreaktrue}{\@nobreakfalse}{}{}
+% \makeatother

@@ -1,0 +1,94 @@
+% \documentclass[11pt]{article}
+% \usepackage{resume}
+\documentclass{resume}
+\usepackage{cvstyle}
+% \usepackage{soul}
+\hypersetup{colorlinks=true,
+    linkcolor=linkblue,    % cross-references
+    urlcolor=linkblue,     % external URLs
+    citecolor=linkblue,    % citations
+    filecolor=linkblue     % local file links
+    }
+
+
+
+% for fancy footer thingy:
+    \usepackage{fancyhdr}
+    \usepackage{lastpage} % for total page number
+    \pagestyle{fancy}
+    \fancyhf{} % clear all header and footer fields
+
+    \fancyhfoffset[R]{0pt}
+
+    % Footer
+    \fancyfoot[L]{
+        % \colorbox{barcolor}{\rule{0pt}{1.5ex}\rule{0.3cm}{0pt}}%
+        % \hspace{0.5em}%
+        \scriptsize\textcolor{darkgrey}{Zach Cutler} \,\textcolor{faded}{|}\, \textcolor{darkgrey}{Curriculum Vitae}
+    } % left footer
+    
+    \fancyfoot[R]{
+
+        \scriptsize\textcolor{darkgrey}{\thepage{}} \textcolor{faded}{/} \textcolor{darkgrey}{\pageref*{LastPage}}
+    }      % right footer
+    
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{parskip}
+
+\usepackage[T1]{fontenc}    % Better font encoding
+\usepackage[sfdefault,semibold]{FiraSans}
+
+% \makeatletter
+% \DeclareFontShape{T1}{FiraSans-TLF}{bx}{it}{<-> ssub * FiraSans-TLF/m/it}{}
+% \DeclareFontShape{T1}{FiraSans-TOsF}{bx}{it}{<-> ssub * FiraSans-TOsF/m/it}{}
+% \makeatother
+
+\usepackage{microtype}      % Subtle spacing & kerning improvements
+\usepackage{lmodern}        % Nicer Latin Modern font
+\usepackage{geometry}       % Control margins
+\geometry{margin=1in,marginparwidth=0pt,marginparsep=0pt}       % Professional margin setup
+
+% for box thingy
+\usepackage[most]{tcolorbox}
+
+% Subtle summary box (tweak colors/thickness to taste)
+\newtcolorbox{researchsummary}[1][]{
+  colback=black!3,     % light gray background
+  colframe=black!20,   % thin gray border
+  boxrule=0.4pt,
+  left=8pt,right=8pt,top=6pt,bottom=6pt,  % padding
+  rounded corners,       % or 'rounded corners'
+  before skip=0.75\baselineskip,
+  after skip=1.0\baselineskip,
+  enhanced,
+  #1                   % allow optional overrides
+}
+
+
+% \usepackage{sectsty}
+% \sectionfont{\large\bfseries} % all sections in bold, larger font
+% \subsectionfont{\normalsize\itshape} % example tweak
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{1.00\textwidth}
+    {\LARGE \textbf{Zach Cutler}}\\
+    \blueurl{https://zach-cutler.com/}{zach-cutler.com}
+    \textcolor{faded}{ | }%
+    \blueurl{mailto:zach.t.cutler@gmail.com}{zach.t.cutler@gmail.com}
+\end{minipage}
+% \begin{minipage}[t]{0.45\textwidth}\raggedleft
+%     {\LARGE \textbf{Research} Statement}
+% \end{minipage}%
+
+
+\input{./content/body}
+
+
+
+\end{document}
